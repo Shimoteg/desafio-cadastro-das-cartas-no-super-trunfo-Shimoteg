@@ -83,6 +83,13 @@ int main()
     printf("Digite o PIB da cidade: ");
     scanf("%f", &pib2);
 
+    //Nivel Aventureiro - Adicionando float (Densidade demografica e PIB per capita
+    float densidade_demorgrafica = populacao / area;
+    float densidade_demorgrafica2 = populacao2 / area2;
+    
+    float pib_cap =pib / populacao;
+    float pib_cap2 =pib2 / populacao2;
+
     // Processamento de dados
     printf("Carta: %d\n", carta);
     printf("Estado: %s\n", estado);
@@ -91,6 +98,8 @@ int main()
     printf("Populacao: %d\n", populacao);
     printf("Area: %.2f\n", area);
     printf("PIB: %.2f\n", pib);
+    printf("PIB per Capita: %.2f\n", pib_cap);
+    printf("Densidade Demografica: %.2f\n", densidade_demorgrafica);
     //Carta2
     printf("Carta: %d\n", carta2);
     printf("Estado: %s\n", estado2);
@@ -99,6 +108,8 @@ int main()
     printf("Populacao: %d\n", populacao2);
     printf("Area: %.2f\n", area2);
     printf("PIB: %.2f\n", pib2);
+    printf("PIB per Capita: %.2f\n", pib_cap2);
+    printf("Densidade Demografica: %.2f\n", densidade_demorgrafica2);
 
     return 0;
 }
